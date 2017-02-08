@@ -1,0 +1,85 @@
+/* this is where all of your CSS styles go */
+
+html'body{
+	width: 100%;
+	height: 100%;
+}
+
+#grid_container {
+	width: 200px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 48%; /* for optical centering */
+	margin-top: -50px;
+	margin-left: -100px;
+}
+
+.mono { 
+	font-family: 'Open_Sans';
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+}
+
+/* Animation Keyframes */
+
+@-webkit-keyframes m_drop {
+	0%, 100% { top: 0px; }
+	50% { top: 150px; }
+	60% {top: 150px;}
+
+}
+
+#m {
+	position: relative;
+	-webkit-animation: m_drop 2s;
+	-webkit-animation-fill-mode: forwards;
+	
+}
+
+@-webkit-keyframes o_drop {
+	0%, 100% { top: 0px; }
+	50% { top: 150px; }
+	60% {top: 150px;}
+}
+
+#o {
+	position: relative;
+	-webkit-animation: o_drop 2s;
+	-webkit-animation-fill-mode: forwards;
+
+}
+
+@-webkit-keyframes n_drop {
+	0% {top: 0px;}
+	50%{top: 150px;}
+	60% {top: 150px; left: 70px;}
+	100% {top: 0px; left: 70px;}
+	}
+
+#n {
+	position: relative;
+	-webkit-animation: n_drop 2s;
+	-webkit-animation-fill-mode: forwards;
+
+}
+
+@-webkit-keyframes d_drop {
+	0% {top: 0px;}
+	50%{top: 150px;}
+	60%{top: 150px; left: -60px;}
+	100% {top: 0px; left: -60px;}
+
+	
+}
+
+#d {
+	position: relative;
+	-webkit-animation: d_drop 2s;
+	-webkit-animation-fill-mode: forwards;
+
+
+}
+
+
